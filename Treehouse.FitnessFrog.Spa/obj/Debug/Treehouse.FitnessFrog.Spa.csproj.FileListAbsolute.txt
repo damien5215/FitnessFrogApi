@@ -1,0 +1,16 @@
+C:\Users\Damien\Documents\GitHub\FitnessFrogApi\Treehouse.FitnessFrog.Spa\bin\Treehouse.FitnessFrog.Spa.dll.config
+C:\Users\Damien\Documents\GitHub\FitnessFrogApi\Treehouse.FitnessFrog.Spa\bin\Treehouse.FitnessFrog.Spa.dll
+C:\Users\Damien\Documents\GitHub\FitnessFrogApi\Treehouse.FitnessFrog.Spa\bin\Treehouse.FitnessFrog.Spa.pdb
+C:\Users\Damien\Documents\GitHub\FitnessFrogApi\Treehouse.FitnessFrog.Spa\bin\EntityFramework.dll
+C:\Users\Damien\Documents\GitHub\FitnessFrogApi\Treehouse.FitnessFrog.Spa\bin\EntityFramework.SqlServer.dll
+C:\Users\Damien\Documents\GitHub\FitnessFrogApi\Treehouse.FitnessFrog.Spa\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Damien\Documents\GitHub\FitnessFrogApi\Treehouse.FitnessFrog.Spa\bin\Treehouse.FitnessFrog.Shared.dll
+C:\Users\Damien\Documents\GitHub\FitnessFrogApi\Treehouse.FitnessFrog.Spa\bin\Treehouse.FitnessFrog.Shared.pdb
+C:\Users\Damien\Documents\GitHub\FitnessFrogApi\Treehouse.FitnessFrog.Spa\bin\Treehouse.FitnessFrog.Shared.dll.config
+C:\Users\Damien\Documents\GitHub\FitnessFrogApi\Treehouse.FitnessFrog.Spa\bin\EntityFramework.xml
+C:\Users\Damien\Documents\GitHub\FitnessFrogApi\Treehouse.FitnessFrog.Spa\bin\EntityFramework.SqlServer.xml
+C:\Users\Damien\Documents\GitHub\FitnessFrogApi\Treehouse.FitnessFrog.Spa\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Damien\Documents\GitHub\FitnessFrogApi\Treehouse.FitnessFrog.Spa\obj\Debug\Treehouse.FitnessFrog.Spa.csprojAssemblyReference.cache
+C:\Users\Damien\Documents\GitHub\FitnessFrogApi\Treehouse.FitnessFrog.Spa\obj\Debug\Treehouse.FitnessFrog.Spa.csproj.CopyComplete
+C:\Users\Damien\Documents\GitHub\FitnessFrogApi\Treehouse.FitnessFrog.Spa\obj\Debug\Treehouse.FitnessFrog.Spa.dll
+C:\Users\Damien\Documents\GitHub\FitnessFrogApi\Treehouse.FitnessFrog.Spa\obj\Debug\Treehouse.FitnessFrog.Spa.pdb
