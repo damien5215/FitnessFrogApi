@@ -14,7 +14,7 @@ namespace Treehouse.FitnessFrog.Spa.Controllers
             return new List<Entry>() 
             {
                 new Entry(2017, 1, 2, activityBiking, 10.0m),
-                new Entry(2017, 1, 3, activityBiking, 12.1m)
+                new Entry(2017, 1, 3, activityBiking, 12.1m, )
             }; 
         }
 
@@ -23,15 +23,15 @@ namespace Treehouse.FitnessFrog.Spa.Controllers
             return null;
         }
 
-        public void Post()
+        public void Post(Entry entry)
         {
 
         }
-        public void Put()
+        public void Put(int id, Entry entry)
         {
 
         }
-        public void Delete()
+        public void Delete(int id)
         {
 
         }

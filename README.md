@@ -38,3 +38,18 @@ Web API—by default—will look for a controller action method whose name match
 Prefixing routes with "api" when using Web API helps to ensure that API routes won't collide with any ASP.NET MVC routes.
 
 --------------------------------------------------------------
+
+To serialize data to the client's preferred data format, Web API will use a "media type formatter". 
+
+Web API's built-in media type formatters provide support for JSON, XML, BSON, and form-urlencoded data.
+
+Web API's built-in JSON media type formatter utilizes the popular, open source Json.NET framework developed by Newtonsoft.
+
+By default, action method parameters defined using simple types (such as `int`, `bool`, `double`, etc.) get their values from "route data or query string parameters". This behavior can be overridden by decorating a parameter with the `[FromBody]` attribute.
+
+When working with a REST API developed using Web API, HTTP requests are made against endpoints which are represented by API Controllers.
+
+Each request is also associated with an HTTP verb or method, which are the actions that can be taken against resources.
+
+--------------------------------------------------------------
+
