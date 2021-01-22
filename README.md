@@ -8,10 +8,10 @@ REST API resources are represented by Uniform Resource Identifiers—or URIs. Th
 
 MAIN HTTP Methods -
 
-GET: Fetchs a collection or single resource.
-POST: Adds new resource to collection.
-PUT: Updates a resource.
-DELETE: Deletes a resource.
+1. GET: Fetchs a collection or single resource.
+2. POST: Adds new resource to collection.
+3. PUT: Updates a resource.
+4. DELETE: Deletes a resource.
 
 REST APIs expect that state is being maintained on the client. Storing state on the client reduces overhead on the server, allowing the server to service more requests.
 
