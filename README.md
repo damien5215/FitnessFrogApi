@@ -1,6 +1,6 @@
 # FitnessFrogApi
 
-NOTES
+NOTES!
  
 REST APIs are composed of "resources", which are the things that we want to retrieve, create, or modify through the API.
 
