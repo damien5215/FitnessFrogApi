@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
+using Newtonsoft.Json.Serialization;
 
 namespace Treehouse.FitnessFrog.Spa
 {
@@ -10,6 +11,11 @@ namespace Treehouse.FitnessFrog.Spa
     {
         public static void Register(HttpConfiguration config) 
         {
+            var jsonSerializerSettings = config.Formatters.JsonFormatter.SerializerSettings;
+
+            jsonSerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+            jsonSerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
