@@ -16,7 +16,7 @@ namespace Treehouse.FitnessFrog.Spa.Controllers
             _entriesRepository = entriesRepository;
         }
 
-        public IEnumerable<Entry> Get() 
+        public IHttpActionResult Get() 
         {
             //var activityBiking = new Activity() { Name = "Biking" };
             //return new List<Entry>()
@@ -25,18 +25,27 @@ namespace Treehouse.FitnessFrog.Spa.Controllers
             //    new Entry(2017, 1, 3, activityBiking, 12.1m)
             //};
 
-            return _entriesRepository.GetList();
+            return Ok(_entriesRepository.GetList());
+            //return _entriesRepository.GetList();
         }
 
-        public Entry Get(int id)
+        public IHttpActionResult Get(int id)
         {
-            //return null;
-            return _entriesRepository.Get(id);
+            var entry = _entriesRepository.Get(id);
+
+            if (entry == null) 
+            {
+                return NotFound();
+            }
+
+            return Ok(entry);
         }
 
-        public void Post(Entry entry)
+        public IHttpActionResult Post(Entry entry)
         {
             _entriesRepository.Add(entry);
+
+            return Created(Url.Link("DefaultApi", new { Controller = "Entries", id = entry.Id }), entry);
         }
         public void Put(int id, Entry entry)
         {
