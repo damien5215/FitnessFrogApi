@@ -25,8 +25,8 @@ namespace Treehouse.FitnessFrog.Spa.Controllers
             //    new Entry(2017, 1, 3, activityBiking, 12.1m)
             //};
 
-            return Ok(_entriesRepository.GetList());
             //return _entriesRepository.GetList();
+            return Ok(_entriesRepository.GetList());
         }
 
         public IHttpActionResult Get(int id)
