@@ -18,14 +18,6 @@ namespace Treehouse.FitnessFrog.Spa.Controllers
 
         public IHttpActionResult Get() 
         {
-            //var activityBiking = new Activity() { Name = "Biking" };
-            //return new List<Entry>()
-            //{
-            //    new Entry(2017, 1, 2, activityBiking, 10.0m),
-            //    new Entry(2017, 1, 3, activityBiking, 12.1m)
-            //};
-
-            //return _entriesRepository.GetList();
             return Ok(_entriesRepository.GetList());
         }
 
@@ -43,9 +35,15 @@ namespace Treehouse.FitnessFrog.Spa.Controllers
 
         public IHttpActionResult Post(Entry entry)
         {
+            if (!ModelState.IsValid) 
+            {
+                BadRequest(ModelState);
+            }
+
             _entriesRepository.Add(entry);
 
-            return Created(Url.Link("DefaultApi", new { Controller = "Entries", id = entry.Id }), entry);
+            return Created(
+                Url.Link("DefaultApi", new { Controller = "Entries", id = entry.Id }), entry);
         }
         public void Put(int id, Entry entry)
         {
