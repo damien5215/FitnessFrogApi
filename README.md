@@ -53,3 +53,22 @@ Each request is also associated with an HTTP verb or method, which are the actio
 
 --------------------------------------------------------------
 
+For a controller action method whose return type is defined as `void`, Web API will return a response with an HTTP status code of "204, No Content".
+
+You can also use `IHttpActionResult` for the action method's return type and return a call to the `StatusCode` method passing in the `HttpStatusCode.NoContent` enum value.
+
+When binding to a parameter defined using a complex type, non-nullable types defined on that complex type will be set to their default values if there isn't a value to bind to.
+
+For example, this means that a property of type `int` defined on the complex type will be set to a value of "0".
+
+In a `Get` action method for retrieving a single resource, if a resource isn't found for the provided `id` parameter value, we should return an HTTP status code of "404, Not Found".
+
+You can return a 404 Not Found HTTP status code by returning a call to the ApiController base class' `NotFound` method.
+
+If you have to choose between implementing client-side and server-side validations—it's always best to implement your validations on "the server".
+
+Client-side validations are easy for users to circumvent.
+
+Passing the `ModelState` property into a call to the `BadRequest` method will cause the error messages in the ModelStateDictionary object to be serialized to the response message body.
+
+This gives the client the information that they'll need to correct any issues with the data before they try sending another request.
