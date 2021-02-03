@@ -1,12 +1,18 @@
 # FitnessFrogApi
 
-NOTES!
+Developed from - https://github.com/treehouse-projects/aspnet-fitness-frog-spa
+
+FitnessFrogApi contains a class library project and a a CRUD app developed using Angular. Following the course, I developed the API controller and tested it with Postman.  
+
+--------------------------------------------------------------
+
+**NOTES!**
  
 REST APIs are composed of "resources", which are the things that we want to retrieve, create, or modify through the API.
 
 REST API resources are represented by Uniform Resource Identifiers—or URIs. These URIs or "endpoints" represent either a collection of records or a single record.
 
-MAIN HTTP Methods -
+**MAIN HTTP Methods -**
 
 1. GET: Fetchs a collection or single resource.
 2. POST: Adds new resource to collection.
